@@ -27,6 +27,8 @@ If you are an end-user and just want to run multiple accounts right now without 
 ## 🛠️ Repository Organization
 
 This repository is split up to accommodate both regular gamers and software developers:
+(use this pip install command to install all required dependencies.)
+## pip install CustomTkinter selenium webdriver-manager requests pywin32 cryptography
 
 * **`Check Releases on the right side of the main repo`**: Contains the compiled source builds if you prefer managing the executable local track manually.
 * **`roblox-multi/`**: This folder contains the complete, raw Python source code framework (including `main.py`, `launcher.py`, and `requirements.txt`). If you want to view, audit, or compile the application yourself from scratch, head inside that folder and follow the localized developer guide.
