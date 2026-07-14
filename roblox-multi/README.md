@@ -31,7 +31,7 @@ Choose **one** of the two deployment methods below to start running multiple acc
 
 ### Method 1: The Quick Way (Pre-compiled Executable)
 No Python installation or command lines required.
-1. Download the **`roblox-multi.exe`** file located inside the `dist/` folder of this repository.
+1. Download the **`roblox-multi.exe`** file located right side of the main repository click on the releases.
 2. Move it to any preferred directory on your computer.
 3. Double-click **`roblox-multi.exe`** to launch the software panel directly.
 
