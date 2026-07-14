@@ -3,10 +3,8 @@ import os
 import time
 import logging
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
 from security import Security
 
 class AuthManager:
@@ -94,13 +92,15 @@ class AuthManager:
         options = Options()
         options.add_argument("--disable-gpu")
         options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--disable-blink-features=AutomationControlled")
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option('useAutomationExtension', False)
 
         driver = None
         try:
-            driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+            # Native Selenium 4 manager handles finding and driving Chrome automatically
+            driver = webdriver.Chrome(options=options)
             driver.get("https://www.roblox.com/login")
             
             start_time = time.time()
